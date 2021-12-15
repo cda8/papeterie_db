@@ -5,52 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0dc0fcc-5787-4153-8725-9012bbe8fc81" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/pmd-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Papeterie.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AppliTestB0.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/eni/papeterie/QuerryObjectDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/eni/papeterie/bo/Article.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/eni/papeterie/bo/Ligne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/eni/papeterie/bo/Panier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/eni/papeterie/bo/Ramette.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/eni/papeterie/bo/Stylo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/eni/papeterie/dal/AppliTestDAL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/eni/papeterie/dal/ArticleDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/eni/papeterie/dal/DALException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/eni/papeterie/dal/jdbc/ArticleDAOJdbcImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/eni/papeterie/dao/jpa/ArticlesDaoJpa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/eni/papeterie/dao/jpa/ArticlesEntityJpaRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/eni/papeterie/entites/ArticlesEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/eni/papeterie/entites/hibernate/HibernateTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/eni/papeterie/entites/utils/HibernateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/AppliTestB0.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/fr/eni/papeterie/QuerryObjectDemo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/fr/eni/papeterie/bo/Article.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/fr/eni/papeterie/bo/Ligne.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/fr/eni/papeterie/bo/Panier.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/fr/eni/papeterie/bo/Ramette.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/fr/eni/papeterie/bo/Stylo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/fr/eni/papeterie/dal/AppliTestDAL.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/fr/eni/papeterie/dal/ArticleDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/fr/eni/papeterie/dal/DALException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/fr/eni/papeterie/dal/jdbc/ArticleDAOJdbcImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/fr/eni/papeterie/dao/jpa/ArticlesDaoJpa.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/fr/eni/papeterie/dao/jpa/ArticlesEntityJpaRunner.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/fr/eni/papeterie/entites/ArticlesEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/fr/eni/papeterie/entites/hibernate/HibernateTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/fr/eni/papeterie/entites/utils/HibernateUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/eni/papeterie/dao/jpa/ArticlesEntityJpaRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/eni/papeterie/dao/jpa/ArticlesEntityJpaRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +129,17 @@
       <updated>1638796135481</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
