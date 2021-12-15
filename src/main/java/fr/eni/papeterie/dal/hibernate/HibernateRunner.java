@@ -2,24 +2,28 @@ package fr.eni.papeterie.dal.hibernate;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import fr.eni.papeterie.dal.jpa.ArticleDAOJPA;
 import fr.eni.papeterie.entities.ArticleEntity;
 
 public class HibernateRunner {
 
   public static void main(String[] args) {
+    final Logger LOGGER = LoggerFactory.getLogger("HibernateRunner");
     ArticleDAOJPA articleDAOJPA = new ArticleDAOJPA();
-
+    LOGGER.info("Enregistrement de l'article... ");
     ArticleEntity article = new ArticleEntity("JPA", "testjpa", "JPA",
         1.2f, 20, "rouge", "stylo");
 
-    articleDAOJPA.create(article);
+    // articleDAOJPA.create(article);
     System.out.println(articleDAOJPA.selectById(84));
 
     for (ArticleEntity a : articleDAOJPA.selectAll()) {
       System.out.println(a);
     }
- System.out.println(articleDAOJPA.selectByMarque("bic"));
+    System.out.println(articleDAOJPA.selectByMarque("bic"));
     // List<ArticleEntity> articlesList = articleDAO.selectAll();
     // for (ArticleEntity articleEntity : articlesList) {
     // System.out.println(articleEntity);
@@ -43,7 +47,7 @@ public class HibernateRunner {
     // System.out.println("=> " +
     // articleDAO.selectAll().get(articleDAO.selectAll().size() - 1));
 
-    // articleDAO.closeSession();
+    articleDAOJPA.closeEntityManager();
 
   }
 }
