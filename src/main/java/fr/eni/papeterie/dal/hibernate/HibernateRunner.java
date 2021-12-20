@@ -12,7 +12,8 @@ public class HibernateRunner {
 
   public static void main(String[] args) {
     final Logger LOGGER = LoggerFactory.getLogger("HibernateRunner");
-    ArticleDAOJPA articleDAOJPA = new ArticleDAOJPA();
+    ArticleDAOJPA articleDAOJPA = ArticleDAOJPA.getInstance();
+    
     LOGGER.info("Enregistrement de l'article... ");
     ArticleEntity article = new ArticleEntity("JPA", "testjpa", "JPA",
         1.2f, 20, "rouge", "stylo");
@@ -21,9 +22,9 @@ public class HibernateRunner {
     System.out.println(articleDAOJPA.selectById(84));
 
     for (ArticleEntity a : articleDAOJPA.selectAll()) {
-      System.out.println(a);
+      LOGGER.info(a.toString());
     }
-    System.out.println(articleDAOJPA.selectByMarque("bic"));
+    LOGGER.info(articleDAOJPA.selectByMarque("bic").toString());
     // List<ArticleEntity> articlesList = articleDAO.selectAll();
     // for (ArticleEntity articleEntity : articlesList) {
     // System.out.println(articleEntity);

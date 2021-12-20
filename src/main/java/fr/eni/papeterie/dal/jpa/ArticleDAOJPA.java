@@ -2,7 +2,6 @@ package fr.eni.papeterie.dal.jpa;
 
 import java.util.List;
 
-import javax.persistence.Entity;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
@@ -12,9 +11,13 @@ import fr.eni.papeterie.entities.ArticleEntity;
 
 public class ArticleDAOJPA {
 
-  private EntityManagerFactory factory = Persistence.createEntityManagerFactory("persistence");
-  private EntityManager entityManager = factory.createEntityManager();
-  private EntityTransaction transaction = entityManager.getTransaction();
+  private EntityManager entityManager;
+  private EntityTransaction transaction;
+
+  public ArticleDAOJPA(EntityManager entityManager) {
+    this.entityManager = entityManager;
+    this.transaction = entityManager.getTransaction();
+  }
 
   public void closeEntityManager() {
     entityManager.close();
