@@ -1,5 +1,8 @@
 package fr.eni.papeterie.mapper;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import fr.eni.papeterie.bo.Article;
 import fr.eni.papeterie.bo.Ramette;
 import fr.eni.papeterie.bo.Stylo;
@@ -40,5 +43,13 @@ public class ArticleMapper {
     articleEntity.setPrixUnitaire(article.getPrixUnitaire());
     articleEntity.setQteStock(article.getQteStock());
     return articleEntity;
+  }
+
+  public static List<Article> mapEntityToArticle(List<ArticleEntity> articleEntity) {
+    List<Article> articles = new ArrayList<>();
+    for (ArticleEntity article : articleEntity) {
+      articles.add(mapEntityToArticle(article));
+    }
+    return articles;
   }
 }
