@@ -12,7 +12,7 @@ public class ArticleMapper {
 
   public static Article mapEntityToArticle(ArticleEntity articleEntity) {
     Article article;
-    if (articleEntity.getType().equals("Stylo")) {
+    if (articleEntity.getType().equalsIgnoreCase("Stylo")) {
       article = new Stylo();
       ((Stylo) article).setCouleur(articleEntity.getCouleur());
     } else {
@@ -32,10 +32,11 @@ public class ArticleMapper {
     ArticleEntity articleEntity = new ArticleEntity();
     if (article instanceof Stylo) {
       articleEntity.setCouleur(((Stylo) article).getCouleur());
+      articleEntity.setType("Stylo");
     } else {
       articleEntity.setGrammage(((Ramette) article).getGrammage());
+      articleEntity.setType("Ramette");
     }
-    articleEntity = new ArticleEntity();
     articleEntity.setIdArticle(article.getIdArticle());
     articleEntity.setReference(article.getReference());
     articleEntity.setMarque(article.getMarque());
@@ -45,11 +46,11 @@ public class ArticleMapper {
     return articleEntity;
   }
 
-  public static List<Article> mapEntityToArticle(List<ArticleEntity> articleEntity) {
-    List<Article> articles = new ArrayList<>();
-    for (ArticleEntity article : articleEntity) {
-      articles.add(mapEntityToArticle(article));
+  public static List<Article> mapEntityToArticle(List<ArticleEntity> articles) {
+    List<Article> articleEntities = new ArrayList<>();
+    for (ArticleEntity article : articles) {
+      articleEntities.add(mapEntityToArticle(article));
     }
-    return articles;
+    return articleEntities;
   }
 }

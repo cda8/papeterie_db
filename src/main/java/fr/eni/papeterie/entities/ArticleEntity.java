@@ -22,98 +22,7 @@ public class ArticleEntity {
   private String type;
 
   public ArticleEntity() {
-  }
-
-  /**
-   * @constructor Ramette without id
-   * @param marque
-   * @param reference
-   * @param designation
-   * @param prixunitaire
-   * @param qteStock
-   * @param grammage
-   * @param type
-   */
-  public ArticleEntity(String marque, String reference, String designation, float prixunitaire, int qteStock,
-      Integer grammage,
-      String type) {
-    this.marque = marque;
-    this.reference = reference;
-    this.designation = designation;
-    this.prixunitaire = prixunitaire;
-    this.qteStock = qteStock;
-    this.grammage = grammage;
-    this.type = type;
-  }
-
-  /**
-   * @constructor Ramette with id
-   * @param idArticle
-   * @param marque
-   * @param reference
-   * @param designation
-   * @param prixunitaire
-   * @param qteStock
-   * @param grammage
-   * @param type
-   */
-  public ArticleEntity(int idArticle, String marque, String reference, String designation, float prixunitaire,
-      int qteStock,
-      Integer grammage,
-      String type) {
-    this.idArticle = idArticle;
-    this.marque = marque;
-    this.reference = reference;
-    this.designation = designation;
-    this.prixunitaire = prixunitaire;
-    this.qteStock = qteStock;
-    this.grammage = grammage;
-    this.type = type;
-  }
-
-  /**
-   * @constructor Stylo without id
-   * @param marque
-   * @param reference
-   * @param designation
-   * @param prixunitaire
-   * @param qteStock
-   * @param couleur
-   * @param type
-   */
-  public ArticleEntity(String marque, String reference, String designation, float prixunitaire, int qteStock,
-      String couleur, String type) {
-    this.marque = marque;
-    this.reference = reference;
-    this.designation = designation;
-    this.prixunitaire = prixunitaire;
-    this.qteStock = qteStock;
-    this.couleur = couleur;
-    this.type = type;
-  }
-
-  /**
-   * @constructor Stylo with id
-   * @param idArticle
-   * @param marque
-   * @param reference
-   * @param designation
-   * @param prixunitaire
-   * @param qteStock
-   * @param couleur
-   * @param type
-   */
-  public ArticleEntity(int idArticle, String marque, String reference, String designation, float prixunitaire,
-      int qteStock,
-      String couleur, String type) {
-    this.idArticle = idArticle;
-    this.marque = marque;
-    this.reference = reference;
-    this.designation = designation;
-    this.prixunitaire = prixunitaire;
-    this.qteStock = qteStock;
-    this.couleur = couleur;
-    this.type = type;
+    super();
   }
 
   public int getIdArticle() {
@@ -164,7 +73,7 @@ public class ArticleEntity {
     this.qteStock = qteStock;
   }
 
-  public int getGrammage() {
+  public Integer getGrammage() {
     return grammage;
   }
 

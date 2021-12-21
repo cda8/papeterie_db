@@ -5,6 +5,7 @@ import java.util.List;
 
 import fr.eni.papeterie.bll.CatalogueManager;
 import fr.eni.papeterie.exception.BLLException;
+import fr.eni.papeterie.mapper.ArticleMapper;
 
 public class AppliTestBLL {
   public static void main(String[] args) {

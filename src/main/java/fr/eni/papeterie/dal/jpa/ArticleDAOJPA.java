@@ -67,9 +67,8 @@ public class ArticleDAOJPA {
 
   public void delete(ArticleEntity article) {
     System.out.println("Suppression de l'article... ");
-    ArticleEntity articleToDelete = entityManager.find(ArticleEntity.class, article.getIdArticle());
     transaction.begin();
-    entityManager.remove(articleToDelete);
+    entityManager.remove(article);
     transaction.commit();
 
   }
