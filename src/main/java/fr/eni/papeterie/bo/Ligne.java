@@ -26,7 +26,7 @@ public class Ligne {
   }
 
   public float getPrix() {
-    return article.getPrixunitaire() * qte;
+    return article.getPrixUnitaire() * qte;
   }
 
   @Override
