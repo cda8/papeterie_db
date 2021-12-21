@@ -60,11 +60,11 @@ public class Article {
     this.designation = designation;
   }
 
-  public float getPrixunitaire() {
+  public float getPrixUnitaire() {
     return prixunitaire;
   }
 
-  public void setPrixunitaire(float prixunitaire) {
+  public void setPrixUnitaire(float prixunitaire) {
     this.prixunitaire = prixunitaire;
   }
 
